@@ -1,0 +1,27 @@
+/*
+ *  
+ *  Fluid Scale Tool
+ *
+ *  Developer by Mike Riethmuller, this sass function uses the CSS calc
+ *  feature to interpolate smoothly between two CSS properties based upon
+ *  min and maximum viewport width.
+ *  
+ */
+
+$scale_min_width: 320px
+$scale_max_width: 1400px
+
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
+
+=fluid-scale($properties, $min-vw, $max-vw, $min-value, $max-value)
+  @each $property in $properties
+    #{$property}: $min-value
+
+  @media screen and (min-width: $min-vw)
+    @each $property in $properties
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+
+  @media screen and (min-width: $max-vw)
+    @each $property in $properties
+      #{$property}: $max-value

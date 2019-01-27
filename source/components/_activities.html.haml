@@ -1,0 +1,8 @@
+- if activity.kind_of?(Hash)
+  - place = find_place(activity.place)[1]
+  .Day__activity
+    = link_to place.link do
+      = activity.verbiage
+      = place.name
+- else
+  .Day__activity= activity

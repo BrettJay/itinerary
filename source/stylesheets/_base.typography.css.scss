@@ -1,0 +1,17 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+* {
+  font-family: 'Inter UI', sans-serif;
+}
+
+h1 {
+  @include fluid-scale(font-size, $scale_min_width, $scale_max_width, 21px, 32px);
+  letter-spacing: -0.04em;
+}
+
+p {
+  @include fluid-scale(font-size, $scale_min_width, $scale_max_width, 14px, 19px);
+  color: #111;
+  line-height: 1.6;
+  margin: 1.3em 0;
+}

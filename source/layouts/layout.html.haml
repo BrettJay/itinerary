@@ -1,0 +1,53 @@
+!!! 5
+%html.no-js{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+
+    %title= render_page_title
+    %meta{name: "description", content: meta_description}
+    %meta{name: "keywords", content: meta_keywords}
+    %meta{name: "author", content: data.config.site.author}
+
+    -# Standard viewport tag to set the viewport to the device's width,
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
+    -# Stylesheets
+    = stylesheet_link_tag 'styles'
+
+    %link{rel: "author", href: "/humans.txt"}
+    
+    %meta{property: 'og:title',        content: render_page_title }
+    %meta{property: 'fb:title',        content: render_page_title }
+    %meta{property: 'og:description',  content: render_page_description }
+    %meta{property: 'fb:description',  content: render_page_description }
+    %meta{property: 'og:locale',       content: 'en_us'}
+
+    %meta{property: 'fb:type',         content: 'article'}
+    %meta{property: 'fb:image',        content: "#{path_to_opengraph_tag}fb.png" }
+    %meta{property: 'fb:image:type',   content: 'image/png' }
+    %meta{property: 'fb:image:width',  content: '600' }
+    %meta{property: 'fb:image:height', content: '315' }
+
+    %meta{property: 'og:type',         content: 'article'}
+    %meta{property: 'og:image',        content: "#{path_to_opengraph_tag}og.png" }
+    %meta{property: 'og:image:type',   content: 'image/png' }
+    %meta{property: 'og:image:width',  content: '560' }
+    %meta{property: 'og:image:height', content: '300' }
+
+    %link{href: "/apple-touch-icon.png", rel: "apple-touch-icon", sizes: "180x180"}
+    %link{href: "/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{href: "/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{href: "/site.webmanifest", rel: "manifest"}
+    %link{color: "#211e17", href: "/safari-pinned-tab.svg", rel: "mask-icon"}
+    %meta{content: "#211e17", name: "msapplication-TileColor"}
+    %meta{content: "#ffffff", name: "theme-color"}
+
+    -# App Icons
+    %link{rel: "shortcut icon", href: "favicon.ico"}
+
+
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:400,600,800", rel: "stylesheet"}/
+
+  %body{class: current_page.data.body_classes || "page"}
+    
+    = yield

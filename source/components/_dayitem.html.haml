@@ -1,0 +1,29 @@
+.DateItem
+  .DateItem__Date
+    %h2.DateItem__dayLabel= Date.parse(slug).strftime("%A")
+    %h2.DateItem__dateLabel= Date.parse(slug).strftime("%b %-d")
+  .DayItem__Schedule
+    .Day.Day--Morning
+      .Day__label= date.morning.area
+      .Day__activities
+        - date.morning.activities.each do | activity |
+          = partial 'components/activities', locals: { activity: activity }
+    
+    .Day.Day--Meal
+      .Meal__label= date.lunch.name
+
+    .Day.Day--Afternoon
+      .Day__label= date.afternoon.area
+
+      .Day__activities
+        - date.afternoon.activities.each do | activity |
+          = partial 'components/activities', locals: { activity: activity }
+
+    .Day.Day--Meal
+      .Meal__label= date.dinner.name
+
+    .Day.Day--Night
+      .Day__label= date.night.area
+      .Day__activities
+        - date.night.activities.each do | activity |
+          = partial 'components/activities', locals: { activity: activity }

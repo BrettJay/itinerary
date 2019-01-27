@@ -1,0 +1,22 @@
+morning:
+  area: Shinjuku
+  activities:
+    - Tokyo Metropolitan Government Building
+    - Blue Bottle Coffee
+lunch:
+  name: Ichiran
+  location: Shinjuku
+  cuisine: ramen
+afternoon:
+  area: Roppongi
+  activities:
+    - Brewdog
+    - Don Quijote
+dinner:
+  name: Nabezo
+  location: Shibuya
+  cuisine: sukiyaki
+night:
+  area: Akihabara
+  activities:
+    - Shopping

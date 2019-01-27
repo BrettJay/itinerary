@@ -1,0 +1,83 @@
+/*
+ *  
+ *  Respond To Mixin
+ *
+ *  Includes names for the most common device target sizes.
+ *  
+ */
+
+/*
+
+  |      Mobile     |   Small   | iPad  |  Large  |
+  0                480         768     960       ...
+  <-----------------|           |       |         |
+  +respond-to(mobile)
+
+  |      Mobile     |   Small   | iPad  |  Large  |
+  <-----------------|-----------|       |         |
+  +respond-to(small-down)
+  |                 |-----------|       |         |
+  +respond-to(small-only)
+  |                 |-----------|-------|         |
+  +respond-to(small-ipad-only)
+  |                 |-----------|-------|--------->
+  +respond-to(small-up)
+
+  |      Mobile     |   Small   | iPad  |  Large  |
+  <-----------------|-----------|-------|         |
+  +respond-to(ipad-down)
+  |                 |           |-------|         |
+  +respond-to(ipad-only)
+  |                 |           |-------|--------->
+  +respond-to(ipad-up)
+
+  |      Mobile     |   Small   | iPad  |  Large  |
+  |                 |           |       |--------->
+  +respond-to(large)
+
+  */
+
+=respond-to($media)
+  @if $media == tiny
+    @media only screen and (max-width: 374px)
+      @content
+
+  @else if $media == mobile
+    @media only screen and (max-width: 479px)
+      @content
+
+  @else if $media == small-down
+    @media only screen and (max-width: 767px)
+      @content
+
+  @else if $media == small-only
+    @media only screen and (min-width: 480px) and (max-width: 767px)
+      @content
+
+  @else if $media == small-ipad-only
+    @media only screen and (min-width: 480px) and (max-width: 959px)
+      @content
+
+  @else if $media == small-up
+    @media only screen and (min-width: 480px)
+      @content
+
+  @else if $media == ipad-down
+    @media only screen and (max-width: 959px)
+      @content
+
+  @else if $media == ipad-only
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+      @content
+
+  @else if $media == ipad-up
+    @media only screen and (min-width: 768px)
+      @content
+
+  @else if $media == large
+    @media only screen and (min-width: 960px)
+      @content
+
+  @else if $media == x-large
+    @media only screen and (min-width: 1300px)
+      @content

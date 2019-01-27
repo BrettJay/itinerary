@@ -1,0 +1,17 @@
+# Site wide settings
+site:
+  root_url: https://itinerary.brett.cool
+  title: Itinerary
+  title_separator: " — "
+  meta_description: Travel itinerary
+  meta_keywords:
+    - itinerary
+  author: Brett Jones
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author:
+    name: Brett Jones
+    uri: http://brett.cool

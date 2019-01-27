@@ -1,0 +1,20 @@
+morning:
+  area: Flight
+  activities:
+    - Flight
+lunch:
+  name: Airplane food
+  location: Plane
+  cuisine: planefood
+afternoon:
+  area: Flight
+  activities:
+    - Flight
+dinner:
+  name: Airplane food
+  location: Plane
+  cuisine: planefood
+night:
+  area: Osaka
+  activities:
+    - Arrive in hotel

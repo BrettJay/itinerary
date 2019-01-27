@@ -1,0 +1,13 @@
+.Publication_Item
+  = link_to "/#{id}", class: 'Publication' do
+    .Publication_title= publication.title
+    .Publication_subtitles.mt1= publication.summary
+    .Publication_badge
+      .Icon
+        %svg{height: "15", viewbox: "0 0 12 15", width: "12", xmlns: "http://www.w3.org/2000/svg"}
+          %g{fill: "#ffffff"}
+            %path{d: "M1,1 L1,14 L11,14 L11,3.70710678 L8.29289322,1 L1,1 Z M8.70710678,0 L12,3.29289322 L12,15 L0,15 L0,0 L8.70710678,0 Z"}
+            %polygon{points: "3 5 3 4 7 4 7 5"}
+            %polygon{points: "3 8 3 7 9 7 9 8"}
+            %polygon{points: "3 11 3 10 6 10 6 11"}
+      = pluralize(publication.articles.count, 'article')

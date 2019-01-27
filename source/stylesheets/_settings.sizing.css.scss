@@ -1,0 +1,127 @@
+/*
+ *  
+ *  Sizing settings
+ *
+ *  Sass variables for sizing increments, as well as utility mixins for padding
+ *  and margins using fluid scale.
+ *  
+ */
+
+$sizing: 20px;
+$sizing--large: $sizing * 2;
+$sizing--huge: $sizing * 4;
+$sizing--small: $sizing / 2;
+$container-width: 1400px;
+$column-padding: $sizing;
+$inner-column-padding: $sizing--small;
+
+$size_scale_1_min: 5px;
+$size_scale_2_min: 10px;
+$size_scale_3_min: 15px;
+$size_scale_4_min: 30px;
+$size_scale_1_max: 10px;
+$size_scale_2_max: 30px;
+$size_scale_3_max: 50px;
+$size_scale_4_max: 90px;
+
+// Padding Utility Mixins
+@mixin pb1 { @include fluid-scale(padding-bottom, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin pb2 { @include fluid-scale(padding-bottom, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin pb3 { @include fluid-scale(padding-bottom, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin pb4 { @include fluid-scale(padding-bottom, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin pt1 { @include fluid-scale(padding-top, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin pt2 { @include fluid-scale(padding-top, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin pt3 { @include fluid-scale(padding-top, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin pt4 { @include fluid-scale(padding-top, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin pl1 { @include fluid-scale(padding-left, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin pl2 { @include fluid-scale(padding-left, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin pl3 { @include fluid-scale(padding-left, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin pl4 { @include fluid-scale(padding-left, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin pr1 { @include fluid-scale(padding-right, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin pr2 { @include fluid-scale(padding-right, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin pr3 { @include fluid-scale(padding-right, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin pr4 { @include fluid-scale(padding-right, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin pa1 { @include fluid-scale(padding, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin pa2 { @include fluid-scale(padding, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin pa3 { @include fluid-scale(padding, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin pa4 { @include fluid-scale(padding, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+// Margin Utility Mixins
+@mixin mb1 { @include fluid-scale(margin-bottom, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin mb2 { @include fluid-scale(margin-bottom, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin mb3 { @include fluid-scale(margin-bottom, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin mb4 { @include fluid-scale(margin-bottom, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin mt1 { @include fluid-scale(margin-top, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin mt2 { @include fluid-scale(margin-top, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin mt3 { @include fluid-scale(margin-top, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin mt4 { @include fluid-scale(margin-top, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin ml1 { @include fluid-scale(margin-left, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin ml2 { @include fluid-scale(margin-left, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin ml3 { @include fluid-scale(margin-left, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin ml4 { @include fluid-scale(margin-left, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin mr1 { @include fluid-scale(margin-right, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin mr2 { @include fluid-scale(margin-right, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin mr3 { @include fluid-scale(margin-right, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin mr4 { @include fluid-scale(margin-right, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+@mixin ma1 { @include fluid-scale(margin, $scale_min_width, $scale_max_width, $size_scale_1_min, $size_scale_1_max); }
+@mixin ma2 { @include fluid-scale(margin, $scale_min_width, $scale_max_width, $size_scale_2_min, $size_scale_2_max); }
+@mixin ma3 { @include fluid-scale(margin, $scale_min_width, $scale_max_width, $size_scale_3_min, $size_scale_3_max); }
+@mixin ma4 { @include fluid-scale(margin, $scale_min_width, $scale_max_width, $size_scale_4_min, $size_scale_4_max); }
+
+.pt1 { @include pt1(); }
+.pt2 { @include pt2(); }
+.pt3 { @include pt3(); }
+.pt4 { @include pt4(); }
+
+.pb1 { @include pb1(); }
+.pb2 { @include pb2(); }
+.pb3 { @include pb3(); }
+.pb4 { @include pb4(); }
+
+.pl1 { @include pl1(); }
+.pl2 { @include pl2(); }
+.pl3 { @include pl3(); }
+.pl4 { @include pl4(); }
+
+.pr1 { @include pr1(); }
+.pr2 { @include pr2(); }
+.pr3 { @include pr3(); }
+.pr4 { @include pr4(); }
+
+.pa1 { @include pa1(); }
+.pa2 { @include pa2(); }
+.pa3 { @include pa3(); }
+.pa4 { @include pa4(); }
+
+.mt1 { @include mt1(); }
+.mt2 { @include mt2(); }
+.mt3 { @include mt3(); }
+.mt4 { @include mt4(); }
+
+.mb1 { @include mb1(); }
+.mb2 { @include mb2(); }
+.mb3 { @include mb3(); }
+.mb4 { @include mb4(); }
+
+.ml1 { @include ml1(); }
+.ml2 { @include ml2(); }
+.ml3 { @include ml3(); }
+.ml4 { @include ml4(); }
+
+.mr1 { @include mr1(); }
+.mr2 { @include mr2(); }
+.mr3 { @include mr3(); }
+.mr4 { @include mr4(); }
+
+.ma1 { @include ma1(); }
+.ma2 { @include ma2(); }
+.ma3 { @include ma3(); }
+.ma4 { @include ma4(); }

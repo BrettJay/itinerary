@@ -1,0 +1,22 @@
+# humans.txt content - more information here: http://humanstxt.org/
+team:
+  - name: Brett Jones
+    role: author
+    contact: "@brett_jay"
+
+languages:
+  - English
+
+standards_used:
+  - CSS3
+  - HTML5
+  - JavaScript
+
+components_used:
+  - Apache Server Configs
+  - Modernizr
+  - Normalize.css
+  - html5shiv
+
+software_used:
+  - Visual Studio Code
