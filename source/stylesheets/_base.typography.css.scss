@@ -15,3 +15,13 @@ p {
   line-height: 1.6;
   margin: 1.3em 0;
 }
+
+@mixin ts--primary {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+@mixin ts--secondary {
+  font-size: 11px;
+  line-height: 1.3;
+}

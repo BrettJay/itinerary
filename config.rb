@@ -36,9 +36,20 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
-data.dates.each do | slug, date |
+# Okay Geeze
+# First, we sort the dates hash to be in the correct date order
+# Then we do each_with_index to get the idex
+
+trip_dates = data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+
+data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each_with_index do | (slug,date), index |
+  # Replace '-' with '/' in filename
   path = slug.gsub('-', '/')
-  proxy "#{path}.html", "/day/template.html", locals: { slug: slug, date: date }, ignore: true
+  
+  # Populate prev/next dates
+  prev_date = index == 0 ? nil : trip_dates[index - 1]
+  next_date = (index + 1) == trip_dates.length ? nil : trip_dates[index + 1]
+  proxy "#{path}.html", "/day/template.html", locals: { slug: slug, date: date, index: index, next_date: next_date, prev_date: prev_date }, ignore: true
 end
 
 # --------------------------------------------------------------------------------------------------

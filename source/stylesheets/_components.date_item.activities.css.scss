@@ -1,24 +1,23 @@
 .Day__activities {
   margin-top: 5px;
-  font-size: 11px;
-  line-height: 1.3;
+  @include ts--secondary;
   a {
     color: inherit;
     transition: color 0.2s ease;
     text-decoration: none;
     &:hover {
-      color: rgb(0, 110, 212);
+      color: $link;
     }
   }
 }
 
 .Day__activity + .Day__activity {
-  border-top: 1px solid rgba(238,238,238,0.5);
+  border-top: 1px solid $divider--secondary;
 }
 
 .Day__activity {
   padding: 10px 0 10px 24px;
-  color: #555;
+  color: $content--secondary;
   position: relative;
 }
 
@@ -51,6 +50,10 @@
 
 .Activity--Train::before {
   background: image-url('places/train.svg') 50% 50% no-repeat
+}
+
+.Activity--Flight::before {
+  background: image-url('places/airport.svg') 50% 50% no-repeat
 }
 
 .Activity--Shopping::before {

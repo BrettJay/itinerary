@@ -1,0 +1,5 @@
+- unless prev_date.nil?
+  = link_to Date.parse(prev_date[0]).strftime("%b %-d"), date_link_for(prev_date[0]), class: 'DateLink DateLink--previous'
+
+- unless next_date.nil?  
+  = link_to Date.parse(next_date[0]).strftime("%b %-d"), date_link_for(next_date[0]), class: 'DateLink DateLink--next'

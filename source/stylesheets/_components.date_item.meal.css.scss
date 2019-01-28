@@ -53,3 +53,9 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+.Meal--tofu::before {
+  background-image: image-url('meals/tofu.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

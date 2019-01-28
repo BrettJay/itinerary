@@ -1,12 +1,12 @@
 morning:
   area: Flight SQ224
   activities:
-    - PER → SIN
+    - transport: per-to-sin
 lunch: plane-meal
 afternoon:
   area: Flight SQ622
   activities:
-    - SIN → KIX
+    - transport: sin-to-kix
 dinner: plane-meal
 night:
   area: Osaka

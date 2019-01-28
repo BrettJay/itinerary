@@ -1,0 +1,59 @@
+
+.DateNav--footer {
+  border-top: 1px solid $divider;
+  padding: 0 15px 45px;
+}
+
+.DateLink {
+  @include ts--primary;
+  color: inherit;
+  text-decoration: none;
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.DateLink--previous::before,
+.DateLink--next::before {
+  width: 5px;
+  height: 8px;
+  top: 18px;
+  display: block;
+  content: '';
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.DateLink--previous::before {
+  background: image-url('chevron-left.svg') 0 0 no-repeat;
+  left: 3px;
+}
+.DateLink--next::before {
+  background: image-url('chevron-right.svg') 0 0 no-repeat;
+  right: 3px;
+}
+
+.DateLink--previous {
+  text-align: left;
+}
+
+.DateLink--next {
+  text-align: right;
+}
+
+.DateLink--previous:hover::before {
+  transform: translateX(-3px);
+}
+
+.DateLink--next:hover::before {
+  transform: translateX(3px);
+}
+
+.DateNav {
+  display: flex;
+  align-items: center;
+}
+
+.DateLink {
+  flex: 1;
+}

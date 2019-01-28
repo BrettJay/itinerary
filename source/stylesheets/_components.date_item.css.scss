@@ -4,7 +4,7 @@
 }
 
 .DateItem + .DateItem {
-  border-top: 1px solid #eee;
+  border-top: 1px solid $divider;
 }
 
 .DayItem__Schedule {
@@ -18,12 +18,11 @@
 }
 
 .Day + .Day {
-  border-top: 1px solid rgba(238,238,238,0.5);
+  border-top: 1px solid $divider--secondary;
 }
 
 .Day__label {
-  font-size: 13px;
-  line-height: 1.2;
+  @include ts--primary;
   font-weight: bold;
 }
 

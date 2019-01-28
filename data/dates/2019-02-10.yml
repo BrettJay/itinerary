@@ -1,0 +1,20 @@
+morning:
+  area: Arashiyama
+  activities:
+    - place: kiyomizudera-temple
+      verbiage: See
+
+lunch: yudofu
+afternoon:
+  area: South Higashiyama
+  activities:
+    - place: kurasu-kyoto
+      verbiage: Coffee at
+
+dinner: omen-nippon
+night:
+  area: Downtown Kyoto
+  activities:
+    - place: cafe-siesta
+      verbiage: Drink at
+    
