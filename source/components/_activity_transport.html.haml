@@ -1,0 +1,4 @@
+- transport = find_transport(activity.transport)[1]
+
+.Day__activity{class: "Activity--#{transport.type}"}
+  = link_to transport.label, transport.link, target: '_blank', rel: 'noopener'

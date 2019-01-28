@@ -1,20 +1,16 @@
 morning:
-  area: Flight
+  area: Flight SQ224
   activities:
-    - Flight
-lunch:
-  name: Airplane food
-  location: Plane
-  cuisine: planefood
+    - PER → SIN
+lunch: plane-meal
 afternoon:
-  area: Flight
+  area: Flight SQ622
   activities:
-    - Flight
-dinner:
-  name: Airplane food
-  location: Plane
-  cuisine: planefood
+    - SIN → KIX
+dinner: plane-meal
 night:
   area: Osaka
   activities:
-    - Arrive in hotel
+    - transport: airport-to-osaka
+    - place: hotel-code
+      verbiage: Check in to

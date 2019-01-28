@@ -1,22 +1,33 @@
 morning:
-  area: Shinjuku
+  area: Osaka to Kyoto
   activities:
-    - Tokyo Metropolitan Government Building
-    - Blue Bottle Coffee
-lunch:
-  name: Ichiran
-  location: Shinjuku
-  cuisine: ramen
+    - place: lilo-coffee
+      verbiage: Coffee at
+    - place: hotel-code
+      verbiage: Check out of
+    - transport: osaka-to-kyoto
+    - place: imu-hotel
+      verbiage: Drop bags at
+    - place: bukkoji-temple
+      verbiage: See
+lunch: nishki
 afternoon:
-  area: Roppongi
+  area: Central Kyoto
   activities:
-    - Brewdog
-    - Don Quijote
-dinner:
-  name: Nabezo
-  location: Shibuya
-  cuisine: sukiyaki
+    - place: kurasu-kyoto
+      verbiage: Coffee at
+    - place: toji-temple  
+      verbiage: See
+    - place: higashihonganji-temple
+      verbiage: See
+    - place: imu-hotel
+      verbiage: Check in to
+    - place: tokyu-hands-kyoto
+      verbiage: Visit
+dinner: omen-nippon
 night:
-  area: Akihabara
+  area: Downtown Kyoto
   activities:
-    - Shopping
+    - place: cafe-siesta
+      verbiage: Drink at
+    

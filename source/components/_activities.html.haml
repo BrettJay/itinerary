@@ -1,8 +1,10 @@
 - if activity.kind_of?(Hash)
-  - place = find_place(activity.place)[1]
-  .Day__activity
-    = link_to place.link do
-      = activity.verbiage
-      = place.name
+
+  - if activity.keys[0] == 'place'
+    = partial 'components/activity_place', locals: { activity: activity }
+  
+  - elsif activity.keys[0] == 'transport'
+    = partial 'components/activity_transport', locals: { activity: activity }
+
 - else
   .Day__activity= activity

@@ -1,0 +1,40 @@
+label: Train from Osaka to Kyoto
+type: Train
+link: https://goo.gl/maps/LvzoXqLwZJ42
+steps:
+  - time: 8:59am
+    transport:
+      - type: walk
+        location: Hotel Code Shinsaibash
+        distance: 500m
+        time: 7 minutes
+  - time: 9:06am
+    transport:
+      - type: train
+        location: Nagahoribashi Station
+        time: 9 minutes
+        line: Sakaisuji Line
+        stops:
+          - Sakaisuji Hommachi Station: 9:08am
+          - Kitahama Station: 9:10am
+          - Minami-Morimachi Station: 9:12am
+          - Ogimachi Station: 9:13am
+          - Tenjimbashisujirokuchome Station: 9:16am
+      - type: train
+        location: Kita-Senri
+        time: 6 minutes
+        line: Hankyu-Senri Line
+        stops:
+          Kunijima Station: 9:19
+  - time: 9:28am
+    transport:
+      - type: train
+        location: Awaji Station
+        time: 35 minutes
+        line: Hankyu-Kyoto Line
+        stops:
+          - Kawaramachi: 
+          - Ibaraki-shi Station: 9:38am
+          - Takatsuki-shi Station: 9:42am
+          - Nagaokatenjin Station: 9:50am
+          - Katsura Station: 9:57am

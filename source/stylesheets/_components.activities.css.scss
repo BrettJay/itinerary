@@ -1,0 +1,37 @@
+.Day__activity {
+  position: relative;
+}
+.Day__activity::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 34px;
+  background: image-url('places/default.svg') 50% 50% no-repeat
+}
+
+.Activity--Sightseeing::before {
+  background: image-url('places/sight.svg') 50% 50% no-repeat
+}
+
+.Activity--Coffee::before {
+  background: image-url('places/coffee.svg') 50% 50% no-repeat
+}
+
+.Activity--Hotel::before {
+  background: image-url('places/hotel.svg') 50% 50% no-repeat
+}
+
+.Activity--Bar::before {
+  background: image-url('places/bar.svg') 50% 50% no-repeat
+}
+
+.Activity--Train::before {
+  background: image-url('places/train.svg') 50% 50% no-repeat
+}
+
+.Activity--Shopping::before {
+  background: image-url('places/shop.svg') 50% 50% no-repeat
+}

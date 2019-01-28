@@ -1,0 +1,6 @@
+- place = find_place(activity.place)[1]
+
+.Day__activity{class: "Activity--#{place.type}"}
+  = link_to place.link, target: '_blank', rel: 'noopener' do
+    = activity.verbiage
+    = place.name

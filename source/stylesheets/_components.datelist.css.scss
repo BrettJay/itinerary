@@ -1,5 +1,5 @@
 .DateItem {
-  padding: 0 15px;
+  padding: 15px;
   position: relative;
 }
 
@@ -10,11 +10,11 @@
 .DateItem__Date {
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 0;
   left: 15px;
   width: 24%;
   float: left;
-  padding: 15px 0 0;
+  padding: 13px 0 15px;
 }
 
 .DateItem__dayLabel,
@@ -43,27 +43,37 @@
   padding: 15px 0;
 }
 
+.Day + .Day {
+  border-top: 1px solid rgba(238,238,238,0.5);
+}
+
 .Day__label {
   font-size: 13px;
   line-height: 1.2;
   font-weight: bold;
 }
 
-.Meal__label {
-  font-size: 13px;
-  line-height: 1.6;
-  padding: 5px 0;
-  font-weight: bold;
-}
-
 .Day__activities {
   margin-top: 5px;
   font-size: 11px;
-  line-height: 1.6;
+  line-height: 1.3;
   a {
-    color: rgb(0, 110, 212);
+    color: inherit;
+    transition: color 0.2s ease;
     text-decoration: none;
+    &:hover {
+      color: rgb(0, 110, 212);
+    }
   }
+}
+
+.Day__activity {
+  padding: 10px 0 10px 24px;
+  color: #555;
+}
+
+.Day__activity + .Day__activity {
+  border-top: 1px solid rgba(238,238,238,0.5);
 }
 
 .Day::before {
@@ -82,7 +92,7 @@
   border-radius: 1px;
   width: 2px;
   position: absolute;
-  top: 0;
+  top: -1px;
   bottom: 0;
   left: -31px;
   background: #eee;
@@ -93,10 +103,6 @@
   top: 46px;
   bottom: 0;
   border-radius: 1px 1px 0 0;
-}
-
-.Day--Meal::after {
-  border-radius: 0;
 }
 
 .Day--Night::after {
@@ -117,13 +123,4 @@
 .Day--Night::before {
   background: image-url('night.png') 0 0 no-repeat;
   background-size: 30px 30px;
-}
-
-.Day--Meal::before {
-  background: #F5A623 image-url('food.svg') 6px 50% no-repeat;
-  border-radius: 12px;
-  width: 24px;
-  height: 24px;
-  top: 18px;
-  left: -42px;
 }

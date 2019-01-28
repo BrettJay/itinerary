@@ -1,22 +1,25 @@
 morning:
-  area: Osaka
+  area: Kita / Chuo Ward
   activities:
-    - Tokyo Metropolitan Government Building
-    - Blue Bottle Coffee
-lunch:
-  name: Ichiran
-  location: Shinjuku
-  cuisine: ramen
+    - place: lilo-coffee
+      verbiage: Coffee at
+    - place: umeda-sky-building
+      verbiage: Visit
+    - place: osaka-jo
+      verbiage: Visit
+lunch: chicken-soba-osaka
 afternoon:
-  area: Roppongi
+  area: Naniwa / Tennoji Ward
   activities:
-    - Brewdog
-    - Don Quijote
-dinner:
-  name: Nabezo
-  location: Shibuya
-  cuisine: sukiyaki
+    - place: shittenoji
+      verbiage: See
+    - place: shinsekai
+      verbiage: Visit
+    - place: brooklyn-roasting-company
+      verbiage: Grab a coffee at
+dinner: dotonburi
 night:
-  area: Akihabara
+  area: City and Dōtombori
   activities:
-    - Shopping
+    - place: ebisu-bashi
+      verbiage: See

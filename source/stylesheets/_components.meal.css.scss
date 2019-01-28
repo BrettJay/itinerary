@@ -1,0 +1,35 @@
+.Meal__label {
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 5px 0;
+  font-weight: bold;
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover {
+      color: rgb(0, 110, 212);
+    }
+  }
+}
+
+.Meal--missing .Meal__label {
+  opacity: 0.5;
+}
+
+.Day--Meal::after {
+  border-radius: 0;
+}
+
+.Day--Meal::before {
+  background: #F5A623 image-url('food.svg') 6px 50% no-repeat;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  left: -42px;
+}
+
+.Meal--missing::before {
+  background-color: rgb(124, 124, 124);
+}
