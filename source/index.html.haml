@@ -6,5 +6,6 @@
 ---
 
 .DateList
+  .DateItem Itinerary
   - data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | slug, date |
     = partial 'components/dayitem', locals: { slug: slug, date: date }

@@ -1,0 +1,7 @@
+- @dynamic_title = Date.parse(slug).strftime("%A %b %-d")
+
+.DateItem
+  = link_to '←', '/'
+  Itinerary
+
+= partial 'components/dayitem', locals: { slug: slug, date: date }

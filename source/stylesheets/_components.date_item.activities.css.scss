@@ -1,6 +1,27 @@
+.Day__activities {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.3;
+  a {
+    color: inherit;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    &:hover {
+      color: rgb(0, 110, 212);
+    }
+  }
+}
+
+.Day__activity + .Day__activity {
+  border-top: 1px solid rgba(238,238,238,0.5);
+}
+
 .Day__activity {
+  padding: 10px 0 10px 24px;
+  color: #555;
   position: relative;
 }
+
 .Day__activity::before {
   content: '';
   display: block;

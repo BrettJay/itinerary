@@ -6,36 +6,10 @@
 .DateItem + .DateItem {
   border-top: 1px solid #eee;
 }
-    
-.DateItem__Date {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 15px;
-  width: 24%;
-  float: left;
-  padding: 13px 0 15px;
-}
-
-.DateItem__dayLabel,
-.DateItem__dateLabel {
-  margin: 0;
-  line-height: 1.4;
-}
-
-.DateItem__dayLabel {
-  font-size: 13px;
-}
-
-.DateItem__dateLabel {
-  font-size: 11px;
-  font-weight: normal;
-}
 
 .DayItem__Schedule {
   margin-left: 28%;
 }
-
 
 .Day {
   margin: 0 0 0 45px;
@@ -51,29 +25,6 @@
   font-size: 13px;
   line-height: 1.2;
   font-weight: bold;
-}
-
-.Day__activities {
-  margin-top: 5px;
-  font-size: 11px;
-  line-height: 1.3;
-  a {
-    color: inherit;
-    transition: color 0.2s ease;
-    text-decoration: none;
-    &:hover {
-      color: rgb(0, 110, 212);
-    }
-  }
-}
-
-.Day__activity {
-  padding: 10px 0 10px 24px;
-  color: #555;
-}
-
-.Day__activity + .Day__activity {
-  border-top: 1px solid rgba(238,238,238,0.5);
 }
 
 .Day::before {
@@ -106,8 +57,7 @@
 }
 
 .Day--Night::after {
-  border-radius: 0 0 1px 1px;
-  bottom: 52px;
+  display: none;
 }
 
 .Day--Morning::before {

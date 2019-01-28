@@ -36,6 +36,11 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
+data.dates.each do | slug, date |
+  path = slug.gsub('-', '/')
+  proxy "#{path}.html", "/day/template.html", locals: { slug: slug, date: date }, ignore: true
+end
+
 # --------------------------------------------------------------------------------------------------
 # Build configuration
 # --------------------------------------------------------------------------------------------------

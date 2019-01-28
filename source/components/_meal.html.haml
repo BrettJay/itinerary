@@ -1,4 +1,5 @@
 - meal = find_meal(meal)[1]
 
 .Day.Day--Meal{class: "Meal--#{meal.cuisine}"}
-  .Meal__label= link_to meal.name, meal.link
+  .Meal__label= link_to meal.name, meal.link, target: '_blank', rel: 'noopener'
+  .Meal__meta= meal.cuisine.humanize

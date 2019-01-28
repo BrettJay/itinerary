@@ -1,7 +1,8 @@
-.DateItem
+.DateItem{id: Date.parse(slug).strftime("%y-%m-%d")}
   .DateItem__Date
-    %h2.DateItem__dayLabel= Date.parse(slug).strftime("%A")
-    %h2.DateItem__dateLabel= Date.parse(slug).strftime("%b %-d")
+    = link_to "/#{Date.parse(slug).strftime("%Y/%m/%d")}" do
+      %h2.DateItem__dayLabel= Date.parse(slug).strftime("%A")
+      %h2.DateItem__dateLabel= Date.parse(slug).strftime("%b %-d")
 
   .DayItem__Schedule
     .Day.Day--Morning
