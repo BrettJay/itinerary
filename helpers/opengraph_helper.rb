@@ -11,7 +11,7 @@ module OpengraphHelper
     if current_page.data.meta_description.present?
       current_page.data.meta_description
     else
-      "Here is my portfolio for all the reviews, analyses, articles, and barely sober rants I’ve written on all things film."
+      "Travel Itinerary"
     end
   end
 end
