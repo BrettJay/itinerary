@@ -8,17 +8,18 @@
 .Header
   Japan Itinerary — February 2019
 
-.DateCalendar.DateCalendar--header
-  - # You might like to start the calendar week on a Sunday, but you’d be wrong ;)
-  - [ 'Mon','Tue','Wed','Thu','Fri','Sat','Sun'].each do | day |
-    .DateCalendar__day= day
+.CalendarBody
+  .DateCalendar.DateCalendar--header
+    - # You might like to start the calendar week on a Sunday, but you’d be wrong ;)
+    - [ 'Mon','Tue','Wed','Thu','Fri','Sat','Sun'].each do | day |
+      .DateCalendar__day= day
 
-.DateCalendar.DateCalendar--body
-  - # A couple of placeholder dates
-  - [ '4', '5' ].each do | day |
-    .DateCalendar__day.DateCalendar__day--placeholder= day
-  - data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | slug, date |
-    = partial 'components/day_summary', locals: { slug: slug, date: date }
+  .DateCalendar.DateCalendar--body
+    - # A couple of placeholder dates
+    - [ '4', '5' ].each do | day |
+      .DateCalendar__day.DateCalendar__day--placeholder= day
+    - data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | slug, date |
+      = partial 'components/day_summary', locals: { slug: slug, date: date }
 
 :javascript
   let today = new Date().toISOString().substr(0, 10);
