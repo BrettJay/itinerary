@@ -6,15 +6,4 @@
 
 body {
   background: $background;
-  &:before {
-    content: '';
-    height: 20px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    z-index: 100;
-  }
 }
