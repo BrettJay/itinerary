@@ -1,20 +1,21 @@
 morning:
   area: Arashiyama
   activities:
-    - place: kiyomizudera-temple
-      verbiage: See
+    - place: arashiyama-bamboo
+      verbiage: Visit
+    - place: arashiyama-park
+      verbiage: Visit
 
 lunch: yudofu
 afternoon:
-  area: South Higashiyama
+  area: South Kyoto
   activities:
-    - place: kurasu-kyoto
-      verbiage: Coffee at
+    - place: fushimi-inari
+      verbiage: Visit
+   
 
-dinner: omen-nippon
+dinner: tbd
 night:
-  area: Downtown Kyoto
+  area: Undecided
   activities:
-    - place: cafe-siesta
-      verbiage: Drink at
-    
+    - TBA

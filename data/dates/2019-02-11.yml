@@ -1,0 +1,27 @@
+morning:
+  area: South Kyoto and Nara
+  activities:
+    - place: kurasu-fushimi
+      verbiage: Coffee from
+    - place: fushimi-inari
+      verbiage: Visit
+    - place: vermillion-kyoto
+      verbiage: Coffee from
+    - transport: kyoto-to-nara
+
+lunch: tbd
+
+afternoon:
+  area: Nara
+  activities:
+    - place: nara-park
+      verbiage: Visit
+    - place: kasuga-taisha
+      verbiage: Visit
+    - transport: nara-to-kyoto
+
+dinner: tbd
+night:
+  area: Undecided
+  activities:
+    - TBA

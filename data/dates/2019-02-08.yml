@@ -10,6 +10,8 @@ morning:
       verbiage: Drop bags at
     - place: bukkoji-temple
       verbiage: See
+    - place: tokyu-hands-kyoto
+      verbiage: Check out
 lunch: nishki
 afternoon:
   area: Central Kyoto
@@ -22,8 +24,6 @@ afternoon:
       verbiage: See
     - place: imu-hotel
       verbiage: Check in to
-    - place: tokyu-hands-kyoto
-      verbiage: Visit
 dinner: omen-nippon
 night:
   area: Downtown Kyoto
