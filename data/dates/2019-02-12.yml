@@ -1,0 +1,19 @@
+morning:
+  area: Kyoto to Tokyo
+  activities:
+    - place: imu-hotel
+      verbiage: Check out
+
+lunch: shinkansen-meal
+
+afternoon:
+  area: Arrive in Tokyo
+  activities:
+    - place: apa-hotel
+      verbiage: Drop bags at
+
+dinner: harajuku-gyoza
+night:
+  area: Harajuku
+  activities:
+    - TBA

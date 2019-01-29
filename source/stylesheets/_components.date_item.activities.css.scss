@@ -56,6 +56,15 @@
   background: image-url('places/airport.svg') 50% 50% no-repeat
 }
 
+.Activity--Park::before {
+  background: image-url('places/park.svg') 50% 50% no-repeat
+}
+
+.Activity--Temple::before,
+.Activity--Shrine::before {
+  background: image-url('places/shrine.svg') 50% 50% no-repeat
+}
+
 .Activity--Shopping::before {
   background: image-url('places/shop.svg') 50% 50% no-repeat
 }

@@ -1,26 +1,27 @@
 morning:
   area: North Higashiyama
   activities:
-    - place: starbucks-higashiyama
-      verbiage: Coffee at
-    - place: aribica-higashiyama
-      verbiage: Coffee at
-    - place: maruyama-park
-      verbiage: Visit
-    - place: kiyomizudera-temple
+    - place: ginkakuji
       verbiage: See
+    - place: nanzen-ji
+      verbiage: See
+    
+lunch: goya-north-higashiyama
 
-lunch: nishki
 afternoon:
   area: South Higashiyama
   activities:
-    - place: kurasu-kyoto
+    - place: kiyomizudera-temple
+      verbiage: See
+    - place: starbucks-higashiyama
+      verbiage: Coffee at
+    - place: maruyama-park
+      verbiage: Visit
+    - place: aribica-higashiyama
       verbiage: Coffee at
 
-dinner: omen-nippon
+dinner: tbd
 night:
-  area: Downtown Kyoto
+  area: Undecided
   activities:
-    - place: cafe-siesta
-      verbiage: Drink at
-    
+    - TBA
