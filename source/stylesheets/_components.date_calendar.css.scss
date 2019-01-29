@@ -1,0 +1,62 @@
+@function rep($n, $s: "0") { $out: $s; @while str-length($out) < $n { $out: $out + $s; } @return $out; }
+@function zerofill($i, $n) { $l: str-length(#{$i}); @return #{if($n > $l, rep($n - $l), "")}$i; }
+
+.DateCalendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DateCalendar__day {
+  flex: 0 1 14.28%;
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 3;
+  h2 {
+    position: relative;
+    z-index: 5;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-54%);
+    z-index: 1;
+  }
+}
+
+a.DateCalendar__day:hover {
+  background: #eee;
+}
+
+.DateCalendar__day--placeholder {
+  opacity: 0.3;
+}
+
+.DateCalendar--header {
+  @include ts--secondary;
+}
+
+.DateCalendar--header .DateCalendar__day {
+  padding: 20px 0 10px;
+}
+
+@for $i from 6 through 19 {
+  $i: zerofill($i, 2);
+  .Date--2019-02-#{$i} .Day--2019-02-#{$i} {
+    color: #fff;
+    &:after {
+      background: red;
+    }
+  }
+}

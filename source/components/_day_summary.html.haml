@@ -1,5 +1,2 @@
-.DateItem.DateItem--summary{id: Date.parse(slug).strftime("%y-%m-%d")}
-  
-  = link_to date_link_for(slug) do
-    %h2.DateItem__dayLabel= Date.parse(slug).strftime("%A")
-    %h2.DateItem__dateLabel= Date.parse(slug).strftime("%b %-d")
+= link_to date_link_for(slug), class: "DateCalendar__day Day--#{Date.parse(slug).strftime("%Y-%m-%d")}" do
+  %h2.DateItem__dayLabel= Date.parse(slug).strftime("%-d")
