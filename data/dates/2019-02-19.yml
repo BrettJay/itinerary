@@ -1,10 +1,11 @@
 morning:
-  area: Departing for airport
+  area: Narita Airpot
   activities:
     - place: apa-hotel
       verbiage: Check out of
     - transport: tokyo-to-nrt
     - transport: nrt-to-sin
+
 lunch: plane-meal
 
 afternoon:
@@ -15,6 +16,6 @@ afternoon:
 dinner: plane-meal
 
 night:
-  area: Perth
+  area: Australia
   activities:
     - Land in Perth

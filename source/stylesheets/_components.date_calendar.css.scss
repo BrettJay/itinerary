@@ -1,5 +1,5 @@
 @function rep($n, $s: "0") { $out: $s; @while str-length($out) < $n { $out: $out + $s; } @return $out; }
-@function zerofill($i, $n) { $l: str-length(#{$i}); @return unquote("#{if($n > $l, rep($n - $l), "")}#{$i}"); }
+@function zerofill($i, $n) { $l: str-length(#{$i}); @return unquote("#{if($n > $l, rep($n - $l), "")}#{unquote("#{$i}")}"); }
 
 .DateCalendar {
   display: flex;
