@@ -3,17 +3,19 @@ morning:
   activities:
     - transport: shibuya-to-tokyo
     - transport: tokyo-to-yuzawa
+    - Arrive in Yuzawa
+    - Explore Yuzawa
 
 lunch: ninjentei
 
 afternoon:
-  area: Niigata
+  area: Yuzawa
   activities:
-    - place: apa-hotel
-      verbiage: Drop bags at
+    - Explore Yuzawa
 
-dinner: harajuku-gyoza
+dinner: nabezo-shibuya
+
 night:
-  area: Harajuku
+  area: Akikabara
   activities:
     - TBA

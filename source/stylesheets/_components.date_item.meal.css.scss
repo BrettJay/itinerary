@@ -59,3 +59,9 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+.Meal--pizza::before {
+  background-image: image-url('meals/pizza.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

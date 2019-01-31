@@ -3,17 +3,21 @@ morning:
   activities:
     - place: imu-hotel
       verbiage: Check out
-
+    - transport: kyoto-to-tokyo
 lunch: shinkansen-meal
 
 afternoon:
-  area: Arrive in Tokyo
+  area: Shibuya and Harajuku
   activities:
     - place: apa-hotel
       verbiage: Drop bags at
-
+    - place: about-life
+      verbiage: Coffee at
+    - place: takashita-dori
+      verbiage: Visit
 dinner: harajuku-gyoza
 night:
   area: Harajuku
   activities:
-    - TBA
+    - place: kiddy-land-harajuku
+      verbiage: Visit

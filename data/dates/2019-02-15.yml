@@ -1,0 +1,17 @@
+morning:
+  area: Akihabara
+  activities:
+    - Shopping in Akihabara
+    
+lunch: shake-shack-minato
+
+afternoon:
+  area: Roppongi
+  activities:
+    - tbd
+
+dinner: tbd
+night:
+  area: tbd
+  activities:
+    - TBA

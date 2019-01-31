@@ -14,8 +14,9 @@ afternoon:
     - place: tokyo-imperial-palace
       verbiage: Visit
 
-dinner: harajuku-gyoza
+dinner: ichiran-harajuku
+
 night:
-  area: Harajuku
+  area: Shinjuku
   activities:
     - TBA

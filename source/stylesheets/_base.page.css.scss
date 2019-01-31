@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
-html {
-  background: #000;
-}
-
 body {
   background: $background;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #000;
+  }
 }
