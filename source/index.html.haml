@@ -1,12 +1,12 @@
 ---
-  title: Japan
+  title: Japan — February 2019
   body_classes: home
   meta_description:
   meta_keywords:
 ---
 
 .Header
-  Japan Itinerary — February 2019
+  Japan — February 2019
 
 .CalendarBody
   .DateCalendar.DateCalendar--header
@@ -21,7 +21,10 @@
         %h2.DateItem__dayLabel= day
     - data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | slug, date |
       = partial 'components/day_summary', locals: { slug: slug, date: date }
-
+    - # A couple of placeholder dates
+    - [ '20', '21', '22', '23', '24'].each do | day |
+      .DateCalendar__day.DateCalendar__day--placeholder
+        %h2.DateItem__dayLabel= day
 - data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | slug, date |
   = partial 'components/dayitem', locals: { slug: slug, date: date }
   

@@ -1,0 +1,20 @@
+morning:
+  area: Departing for airport
+  activities:
+    - place: apa-hotel
+      verbiage: Check out of
+    - transport: tokyo-to-nrt
+    - transport: nrt-to-sin
+lunch: plane-meal
+
+afternoon:
+  area: SQ215
+  activities:
+    - transport: sin-to-per
+
+dinner: plane-meal
+
+night:
+  area: Perth
+  activities:
+    - Land in Perth
