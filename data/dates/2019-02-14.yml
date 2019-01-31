@@ -1,0 +1,21 @@
+morning:
+  area: Nakameguro and Daikanyama
+  activities:
+    - place: onibus
+      verbiage: Coffee at
+    - place: tsutaya-books-sarugakucho
+      verbiage: Visit
+    
+lunch: itasoba-kaoriya
+
+afternoon:
+  area: Marunouchi
+  activities:
+    - place: tokyo-imperial-palace
+      verbiage: Visit
+
+dinner: harajuku-gyoza
+night:
+  area: Harajuku
+  activities:
+    - TBA

@@ -1,0 +1,19 @@
+morning:
+  area: Tokyo and Yuzawa
+  activities:
+    - transport: shibuya-to-tokyo
+    - transport: tokyo-to-yuzawa
+
+lunch: ninjentei
+
+afternoon:
+  area: Niigata
+  activities:
+    - place: apa-hotel
+      verbiage: Drop bags at
+
+dinner: harajuku-gyoza
+night:
+  area: Harajuku
+  activities:
+    - TBA

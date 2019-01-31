@@ -18,6 +18,8 @@ afternoon:
       verbiage: Visit
     - place: kasuga-taisha
       verbiage: Visit
+    - place: todaji-temple
+      verbiage: Visit
     - transport: nara-to-kyoto
 
 dinner: tbd
