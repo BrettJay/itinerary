@@ -1,18 +1,23 @@
 morning:
-  area: Akihabara
+  area: Asakusa
   activities:
-    - Shopping in Akihabara
+    - place: nakamise
+      verbiage: Visit
+    - place: senso-ji
+      verbiage: Visit
     
 lunch: shake-shack-minato
 
 afternoon:
   area: Roppongi
   activities:
-    - tbd
+    - place: brewdog-roppongi
+      verbiage: Beer at
 
-dinner: tbd
+dinner: savoy-roppongi
 
 night:
   area: Roppongi
   activities:
-    - TBA
+    - place: brewdog-roppongi
+      verbiage: Beer at

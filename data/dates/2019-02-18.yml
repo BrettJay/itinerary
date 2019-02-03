@@ -1,18 +1,24 @@
 morning:
-  area: tbd
+  area: Shinjuku morning
   activities:
-    - tbd
+    - place: tokyu-hands-shinjuku
+      verbiage: Visit
+    - place: blue-bottle-shinjuku
+      verbiage: Coffee from
+    - place: tokyo-metropolitan-gov-building
+      verbiage: Visit
     
-lunch: tbd
+lunch: ichiran-shinjuku
 
 afternoon:
   area: tbd
   activities:
     - tbd
 
-dinner: tbd
+dinner: maisen-tokyu-store
 
 night:
-  area: tbd
+  area: Shibuya
   activities:
-    - TBA
+    - place: mikkeller-tokyo
+      verbiage: Beer at

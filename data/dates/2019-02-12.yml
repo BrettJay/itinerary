@@ -4,6 +4,7 @@ morning:
     - place: imu-hotel
       verbiage: Check out
     - transport: kyoto-to-tokyo
+
 lunch: shinkansen-meal
 
 afternoon:
@@ -15,6 +16,10 @@ afternoon:
       verbiage: Coffee at
     - place: takashita-dori
       verbiage: Visit
+    - place: deus-ex-machina
+      verbiage: Get a drink at
+    - place: harajuku-taprooms
+      verbiage: Beer at
 dinner: harajuku-gyoza
 night:
   area: Harajuku

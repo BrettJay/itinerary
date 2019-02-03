@@ -3,8 +3,11 @@ morning:
   activities:
     - place: ginkakuji
       verbiage: See
+    - place: blue-bottle-higashiyama
+      verbiage: Coffee at
     - place: nanzen-ji
       verbiage: See
+    
     
 lunch: goya-north-higashiyama
 

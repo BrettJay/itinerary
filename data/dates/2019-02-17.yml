@@ -1,14 +1,16 @@
 morning:
-  area: tbd
+  area: Asakusa
   activities:
     - tbd
     
 lunch: tbd
 
 afternoon:
-  area: tbd
+  area: Ginza
   activities:
-    - tbd
+    - place: itoya
+      verbiage: Visit
+    - Chuo Dori
 
 dinner: tbd
 

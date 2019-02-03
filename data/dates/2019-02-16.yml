@@ -1,18 +1,22 @@
 morning:
-  area: tbd
+  area: Asakusa and Odaiba
   activities:
-    - tbd
-    
-lunch: tbd
+    - Waterbus to Odaiba
+    - place: venus-fort-odaiba
+      verbiage: Visit
+
+lunch: bills-odaiba
 
 afternoon:
-  area: tbd
+  area: Odaiba
   activities:
-    - tbd
+    - place: teamlab-borderless
+      verbiage: See
+    - Waterbus to Hamamatsuchō
 
-dinner: tbd
+dinner: devilcraft-hamamatsucho
 
 night:
-  area: tbd
+  area: Shinjuku
   activities:
     - TBA

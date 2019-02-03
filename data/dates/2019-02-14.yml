@@ -9,14 +9,19 @@ morning:
 lunch: itasoba-kaoriya
 
 afternoon:
-  area: Marunouchi
+  area: Akihabara
   activities:
-    - place: tokyo-imperial-palace
-      verbiage: Visit
+    - place: radio-kaikan
+      verbiage: Shop at
+    - place: studio-crown
+      verbiage: Photos at
 
 dinner: ichiran-harajuku
 
 night:
   area: Shinjuku
   activities:
-    - TBA
+    - place: bar-bennfiddich
+      verbiage: Drink at
+    - place: golden-gai
+      verbiage: Visit
