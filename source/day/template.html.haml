@@ -1,17 +1,14 @@
+---
+body_classes: day-view
+---
 - @dynamic_title = Date.parse(slug).strftime("%A %b %-d")
 
 .CalendarBody
-  .Header.Header--withDateNav
-    .DateNav
-      - unless prev_date.nil?
-        = link_to Date.parse(prev_date[0]).strftime("%b %-d"), date_link_for(prev_date[0]), class: 'DateLink DateLink--previous'
-      - else
-        .DateLink
-      = link_to @dynamic_title, '/'
-      - unless next_date.nil?  
-        = link_to Date.parse(next_date[0]).strftime("%b %-d"), date_link_for(next_date[0]), class: 'DateLink DateLink--next'
-      - else
-        .DateLink
+  .Header
+    = link_to 'Itinerary', '/', class: 'Header__breadcrumb'
+    
+    = @dynamic_title
+      
 
   = partial 'components/dayitem', locals: { slug: slug, date: date }
 

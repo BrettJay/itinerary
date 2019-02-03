@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.day-view .DateItem {
+  padding-bottom: 65px;
+}
+
 .DateItem + .DateItem {
   border-top: 1px solid $divider;
 }
