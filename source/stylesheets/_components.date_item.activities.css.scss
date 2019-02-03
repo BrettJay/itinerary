@@ -60,6 +60,10 @@
   background: image-url('places/park.svg') 50% 50% no-repeat
 }
 
+.Activity--Dessert::before {
+  background: image-url('places/dessert.svg') 50% 50% no-repeat
+}
+
 .Activity--Temple::before,
 .Activity--Shrine::before {
   background: image-url('places/shrine.svg') 50% 50% no-repeat
