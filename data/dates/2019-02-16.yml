@@ -1,7 +1,11 @@
 morning:
-  area: Asakusa and Odaiba
+  area: Odaiba
   activities:
     - Waterbus to Odaiba
+    - place: unicorn-gundam
+      verbiage: See
+    - place: divercity-tokyo
+      verbiage: Visit
     - place: venus-fort-odaiba
       verbiage: Visit
 
@@ -12,6 +16,7 @@ afternoon:
   activities:
     - place: teamlab-borderless
       verbiage: See
+
     - Waterbus to Hamamatsuchō
 
 dinner: devilcraft-hamamatsucho
@@ -19,4 +24,5 @@ dinner: devilcraft-hamamatsucho
 night:
   area: Shinjuku
   activities:
-    - TBA
+    - place: omoide-yokocho
+      verbiage: Drinks and food at

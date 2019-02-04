@@ -5,7 +5,19 @@ morning:
       verbiage: Visit
     - place: senso-ji
       verbiage: Visit
-    
+    - place: denbouin-street
+      verbiage: See
+    - place: nishisando-dori
+      verbiage: See
+    - place: orange-street
+      verbiage: See
+    - place: shinnakamise-dori
+      verbiage: See
+    - place: sushiya-street
+      verbiage: See
+    - place: asahi-sky-bar
+      verbiage: Beer at
+
 lunch: shake-shack-minato
 
 afternoon:

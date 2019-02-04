@@ -12,10 +12,14 @@ morning:
       verbiage: See
     - place: tokyu-hands-kyoto
       verbiage: Check out
+
 lunch: nishki
+
 afternoon:
   area: Central Kyoto
   activities:
+    - place: tanaka-keiran
+      verbiage: Tamagoyaki at
     - place: kurasu-kyoto
       verbiage: Coffee at
     - place: toji-temple  

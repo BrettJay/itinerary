@@ -8,7 +8,11 @@
 .CalendarBody
   .Header= link_to 'Japan — February 2019', '/' 
   
-  - places_by_location = data.places.group_by{ |id, place| place.location }.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+  - places = data.places
+  - meals = data.meals
+  - all_locations = places.merge(meals)
+  
+  - places_by_location = all_locations.group_by{ |id, place| place.location }.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
 
   - places_by_location.each do | location, places |
     .Day

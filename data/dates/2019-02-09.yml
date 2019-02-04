@@ -1,13 +1,14 @@
 morning:
   area: North Higashiyama
   activities:
+    - place: hanamikoji-dori
+      verbiage: See
     - place: ginkakuji
       verbiage: See
     - place: blue-bottle-higashiyama
       verbiage: Coffee at
     - place: nanzen-ji
       verbiage: See
-    
     
 lunch: goya-north-higashiyama
 
@@ -23,8 +24,10 @@ afternoon:
     - place: aribica-higashiyama
       verbiage: Coffee at
 
-dinner: tbd
+dinner: gogyo-kyoto
+
 night:
-  area: Undecided
+  area: Pontocho Alley
   activities:
-    - TBA
+    - place: happy-stand-kyoto
+      verbiage: Drink at
