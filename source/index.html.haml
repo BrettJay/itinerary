@@ -25,7 +25,7 @@
     - (20..24).each do | day |
       = partial 'components/day_placeholder', locals: { day: day }
 
-  = partial 'components/debug'
+  =# partial 'components/debug'
   
 :javascript
   let today = new Date().toISOString().substr(0, 10);
