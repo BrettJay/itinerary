@@ -16,12 +16,14 @@ afternoon:
     - place: studio-crown
       verbiage: Photos at
 
-dinner: ichiran-harajuku
+dinner: ichiran-shinjuku
 
 night:
   area: Shinjuku
   activities:
     - place: bar-bennfiddich
       verbiage: Drink at
+    - place: omoide-yokocho
+      verbiage: Drinks and food at
     - place: golden-gai
       verbiage: Visit

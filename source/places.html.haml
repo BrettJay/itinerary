@@ -1,0 +1,24 @@
+---
+  title: Japan
+  body_classes: home
+  meta_description:
+  meta_keywords:
+---
+
+.CalendarBody
+  .Header= link_to 'Japan — February 2019', '/' 
+  
+  - places = data.places
+  - meals = data.meals
+  - all_locations = places.merge(meals)
+  
+  - places_by_location = all_locations.group_by{ |id, place| place.location }.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+
+  - places_by_location.each do | location, places |
+    .Day
+      .Day__label= location
+      .Day__activities
+        - places.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | id, place |
+          .Day__activity{class: "Activity--#{place.type}"}
+            = link_to place.link, target: '_blank', rel: 'noopener' do
+              = place.name
