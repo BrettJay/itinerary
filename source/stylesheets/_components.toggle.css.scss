@@ -1,0 +1,31 @@
+.Toggle {
+  display: flex;
+  margin: 7px auto;  
+}
+
+.Toggle__item:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.Toggle__item:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.Toggle__item {
+  border: 1px solid red;
+  text-decoration: none;
+  margin: 0;
+  padding: 8px 15px;
+  color: red;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.Toggle__item--active {
+  background: red;
+  color: white;
+}
+
+.body--places {
+  padding-bottom: 85px;
+}

@@ -18,3 +18,9 @@ body {
     background: #000;
   }
 }
+
+a,
+a:active,
+a:focus {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

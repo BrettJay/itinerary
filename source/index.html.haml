@@ -27,6 +27,11 @@
 
   =# partial 'components/debug'
   
+.DateNav.DateNav--footer
+  .Toggle
+    = link_to 'Dates', '/', class: 'Toggle__item Toggle__item--active'
+    = link_to 'Places', '/places', class: 'Toggle__item'
+
 :javascript
   let today = new Date().toISOString().substr(0, 10);
   document.querySelector(".DateCalendar--body").classList.add(`Date--${today}`);

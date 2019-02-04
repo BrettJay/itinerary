@@ -52,6 +52,16 @@ data.dates.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each_with_index do
   proxy "#{path}.html", "/day/template.html", locals: { slug: slug, date: date, index: index, next_date: next_date, prev_date: prev_date }, ignore: true
 end
 
+# Add places
+places = data.places
+meals = data.meals.select{ | id, meal | meal.location != 'Flight' && meal.location != 'na' }
+all_locations = places.merge(meals)
+places_by_location = all_locations.group_by{ |id, place| place.location }.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+
+places_by_location.each do | location, places |
+  proxy "places/#{location.parameterize("-")}.html", "/places/template.html", locals: { location: location, places: places }, ignore: true
+end
+
 # --------------------------------------------------------------------------------------------------
 # Build configuration
 # --------------------------------------------------------------------------------------------------
