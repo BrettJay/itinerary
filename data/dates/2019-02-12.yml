@@ -14,13 +14,21 @@ afternoon:
       verbiage: Drop bags at
     - place: about-life
       verbiage: Coffee at
+    - place: yoyogi-park
+      verbiage: Visit
+    - place: meiju-jingu
+      verbiage: Visit
     - place: takashita-dori
       verbiage: Visit
+    - place: com-crepe-harajuku
+      verbiage: Crème Brûlée Crêpe at
     - place: deus-ex-machina
       verbiage: Get a drink at
     - place: harajuku-taprooms
       verbiage: Beer at
+
 dinner: harajuku-gyoza
+
 night:
   area: Harajuku
   activities:

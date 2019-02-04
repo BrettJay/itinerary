@@ -28,7 +28,9 @@ afternoon:
       verbiage: See
     - place: imu-hotel
       verbiage: Check in to
+
 dinner: omen-nippon
+
 night:
   area: Downtown Kyoto
   activities:
